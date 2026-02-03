@@ -1,0 +1,38 @@
+{
+  "device": "cuda",
+  "data_csv": "data_rpm.csv",
+  "model_path": "saved_models/simple_regressor_64_128_64_leakyrelu.pth",
+  "scaler_X_path": "saved_scalers/simple_regressor_64_128_64_leakyrelu_scaler_X.pkl",
+  "scaler_y_path": "saved_scalers/simple_regressor_64_128_64_leakyrelu_scaler_y.pkl",
+  "x2": "distance",
+  "slope_col": "slope_percent",
+  "target_col": "net_energy_kwh",
+  "feature_cols": [
+    "mass",
+    "rolling_resistance_coefficient",
+    "drag_coefficient",
+    "frontal_area",
+    "slope_percent",
+    "wheel_diameter",
+    "reduction_ratio",
+    "drivetrain_efficiency",
+    "velocity",
+    "distance",
+    "battery_efficiency"
+  ],
+  "target_abs_lt": 6.0,
+  "residual_abs_gt": 3.0,
+  "n_samples": 50000,
+  "checkpoint_keys": [
+    "architecture",
+    "feature_columns",
+    "input_dim",
+    "metrics",
+    "model_state_dict",
+    "random_seed_numpy",
+    "random_seed_torch",
+    "scaler_X_path",
+    "scaler_y_path",
+    "target_column"
+  ]
+}

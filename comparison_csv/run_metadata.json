@@ -1,0 +1,16 @@
+{
+  "device": "cuda",
+  "data_csv": "data_rpm.csv",
+  "meta_config": "meta_model_config.json",
+  "n_mc": 30,
+  "slope_col": "slope_percent",
+  "target_col": "net_energy_kwh",
+  "n_samples": 50000,
+  "n_features": 11,
+  "threshold_low": -6,
+  "threshold_high": 0,
+  "dual_models_loaded": [
+    "moderate",
+    "steep"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "device": "cuda",
+  "data_csv": "data_rpm.csv",
+  "meta_config": "meta_model_config.json",
+  "n_mc": 30,
+  "slope_col": "slope_percent",
+  "target_col": "net_energy_kwh",
+  "n_samples": 50000,
+  "global": {
+    "model_path": "saved_models/simple_regressor_64_128_64_leakyrelu.pth",
+    "input_dim": 11,
+    "scaler_X_path": "saved_scalers/simple_regressor_64_128_64_leakyrelu_scaler_X.pkl",
+    "scaler_y_path": "saved_scalers/simple_regressor_64_128_64_leakyrelu_scaler_y.pkl"
+  },
+  "dual_thresholds": [
+    -6,
+    0
+  ],
+  "dual_models_loaded": [
+    "moderate",
+    "steep"
+  ]
+}
